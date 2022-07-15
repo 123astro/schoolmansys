@@ -72,5 +72,8 @@ public class Teacher {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "\nTeachers name is : " + name + "\n Teachers salary : " + salary + "\n Teachers salary earned : " + salaryEarned;
+    }
 }
