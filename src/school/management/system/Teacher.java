@@ -67,13 +67,13 @@ public class Teacher {
      * @param salary
      */
     public void receiveSalary(int salary) {
-        salaryEarned += -salary;
-       School.updateTotalMoneySpent(salary);
+        salaryEarned += salary;
+        School.updateTotalMoneySpent(salary);
 
     }
 
     @Override
     public String toString() {
-        return "\nTeachers name is : " + name + "\n Teachers salary : " + salary + "\n Teachers salary earned : " + salaryEarned;
+        return "\nTeacher's name is : " + name + "\nTeachers salary : " + salary + "\nTeachers salary earned : $" + salaryEarned;
     }
 }
